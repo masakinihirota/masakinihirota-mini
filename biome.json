@@ -1,0 +1,59 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": [
+      "**/node_modules/**",
+      "./.next/**",
+      "./.storybook/**",
+      "./stories/**",
+      "./coverage/**",
+      "./supabase/**",
+      "./tsconfig.json",
+      "./pnpm-lock.yaml",
+      "./lib/auth/middleware.ts",
+      "./db/setup.ts",
+      "./app/api/stripe/webhook/route.ts",
+      "./app/(dashboard)/terminal.tsx",
+      "./app/(dashboard)/dashboard/settings"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "ignore": [],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noNonNullAssertion": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "none"
+    }
+  },
+  "json": {
+    "formatter": {
+      "trailingCommas": "none"
+    }
+  }
+}
